@@ -1,0 +1,109 @@
+<html>
+<head>
+    <title> IPL match prediction</title>
+    <link rel="stylesheet" type="text/css" href="\static\css\style.css">   
+</head>
+    <body>
+    <div class="login-box">
+    <img src="\static\images\cricket.png" class="avatar">
+        <h1>Code With Tushar Present IPL Match Prediction</h1>
+        <form action="{{url_for('predict')}}" method = "post">
+				Select Team 1:	<select name="Team1">
+						<option selected disabled>Team 1</option>
+						<option value="1">Mumbai Indians</option>
+						<option value="2">Kalkata Knight Riders</option>
+						<option value="3">Royal Challanger Bangalore</option>
+						<option value="4">Deccan Chargers</option>
+						<option value="5">Channai Super Kings</option>
+						<option value="6">Rajasthan Royals</option>
+                        <option value="7">Delhi Daredevils</option>
+						<option value="8">Gujrat Lions</option>
+						<option value="9">Kings XI panjab</option>
+						<option value="10">Sun risers Hyderabad</option>
+						<option value="11">Rising Pune Supergiant</option>
+						<option value="12">Kochi Tuskers Kerala</option>
+						<option value="13">Pune Warriors</option>
+                    </select>
+                    <br>
+            
+                Select Team 2:    <select name="Team2" >
+						<option selected disabled>Team 2</option>
+						<option value="1">Mumbai Indians</option>
+						<option value="2">Kalkata Knight Riders</option>
+						<option value="3">Royal Challanger Bangalore</option>
+						<option value="4">Deccan Chargers</option>
+						<option value="5">Channai Super Kings</option>
+						<option value="6">Rajasthan Royals</option>
+                        <option value="7">Delhi Daredevils</option>
+						<option value="8">Gujrat Lions</option>
+						<option value="9">Kings XI panjab</option>
+						<option value="10">Sun risers Hyderabad</option>
+						<option value="11">Rising Pune Supergiant</option>
+						<option value="12">Kochi Tuskers Kerala</option>
+						<option value="13">Pune Warriors</option>
+                    </select>
+                    <br>
+
+                Select City: <select name="City">
+						<option selected disabled>City</option>
+						<option value="1">Bangalore</option>
+						<option value="2">Chnadigarh</option>
+						<option value="3">Delhi</option>
+						<option value="4">Mumbai</option>
+						<option value="5">Kolkata</option>
+						<option value="6">Jaipur</option>
+                        <option value="7">Hyderabad</option>
+						<option value="8">Chennai</option>
+						<option value="9">Cape town</option>
+						<option value="10">Port elixabeth</option>
+						<option value="11">Durban</option>
+						<option value="12">Centurion</option>
+                        <option value="13">East london</option>
+						<option value="13">Johannesburg</option>
+						<option value="13">Kimberley</option>
+						<option value="13">ABloemfontein</option>
+						<option value="13">Ahmendabad</option>
+						<option value="13">Cuttack</option>
+						<option value="13">Nagpur</option>
+						<option value="13">Dharamsala</option>
+						<option value="13">Kochi</option>
+						<option value="13">Indore</option>
+						<option value="13">Visakhapatnam</option>
+						<option value="13">Pune</option>
+						<option value="13">Raipur</option>
+						<option value="13">Ranchi</option>
+						<option value="13">Abu Dhabi</option>
+						<option value="13">Sharjah</option>
+						<option value="13">Dubai</option>
+                        <option value="13">rajkot</option>
+						<option value="13">Kanpur</option>
+                    </select>
+                    <br>
+                    Select Toss Winner Team	<select name="tosswin">
+						<option selected disabled>Toss winner Team</option>
+						<option value="1">Mumbai Indians</option>
+						<option value="2">Kalkata Knight Riders</option>
+						<option value="3">Royal Challanger Bangalore</option>
+						<option value="4">Deccan Chargers</option>
+						<option value="5">Channai Super Kings</option>
+						<option value="6">Rajasthan Royals</option>
+                        <option value="7">Delhi Daredevils</option>
+						<option value="8">Gujrat Lions</option>
+						<option value="9">Kings XI panjab</option>
+						<option value="10">Sun risers Hyderabad</option>
+						<option value="11">Rising Pune Supergiant</option>
+						<option value="12">Kochi Tuskers Kerala</option>
+						<option value="13">Pune Warriors</option>
+                    </select>
+                    <br>
+                    Enter the Toss decision:
+                    <select name="tossdic">
+                        <option value="1">Bating</option>
+                        <option value="0">Fielding</option>
+                    </select>
+                    <br><br>
+                    <input type="submit" value="Submit">
+                    <h1>{{ Prediction_text }}</h1>
+        </form> 
+    </body>
+</html>
